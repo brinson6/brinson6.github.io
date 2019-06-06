@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html
+  class=" canvas opacity cssremunit rgba supports fontface generatedcontent textshadow appearance borderradius boxshadow boxsizing csstransforms csstransforms3d csstransitions audio"
+  data-ember-extension="1"
+>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- base href="https://designedfor.sakura.ne.jp/nikuma-n/school-idol-festival/formation.html" -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="ラブライブ！スクールアイドルフェスティバル(スクフェス)で使いたいユニットをこのツールで登録したメンバーから自動的に選んでお勧めします。スコアマッチ用、課題曲用、判定優先等のユニットを編成できます。"
+    />
+    <title>ユニット編成｜designed for</title>
+    <link
+      rel="shortcut icon"
+      href="https://designedfor.sakura.ne.jp/nikuma-n/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://designedfor.sakura.ne.jp/nikuma-n/apple-touch-icon-precomposed.png"
+    />
+    <link
+      rel="stylesheet"
+      href="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/common.css"
+    />
+    <link
+      rel="stylesheet"
+      href="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/icomoon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/form.css"
+    />
+    <link
+      rel="stylesheet"
+      href="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/formation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/formation-newcomers.css"
+    />
+  </head>
+  <body
+    data-devidable-by-device="mobile=mobile-view,tablet=mobile-view"
+    data-devidable-by-width="mobile-view=800,pc-view"
+  >
+    <div class="wrapper pc pc-view">
+      <header><h1 data-localize="">Team formation | designed for</h1></header>
+      <div class="flex-container">
+        <article>
+          <p data-localize="formation_headline">
+            Recommends the most optimal team formation for specific situations.
+          </p>
+          <p class="warning">
+            <span data-localize="nodata_01"
+              >There is no account data. Either
+            </span>
+            <a
+              href="https://designedfor.sakura.ne.jp/nikuma-n/school-idol-festival/registration.html"
+              ><span data-localize="nodata_02">(Add cards)</span> </a
+            ><span data-localize="nodata_03">, </span>
+            <a
+              href="https://designedfor.sakura.ne.jp/nikuma-n/school-idol-festival/registration-by-face.html"
+              ><span data-localize="nodata_04"
+                >(Add cards via thumbnail)</span
+              > </a
+            ><span data-localize="nodata_05"> to a new account, or </span>
+            <a
+              href="https://designedfor.sakura.ne.jp/nikuma-n/school-idol-festival/import.html"
+              ><span data-localize="nodata_06">(Import data)</span> </a
+            ><span data-localize="nodata_07"
+              >. If you would like to test the calculator, click "Sample Data"
+              in
+            </span>
+            <a
+              href="https://designedfor.sakura.ne.jp/nikuma-n/school-idol-festival/import.html"
+              ><span data-localize="nodata_06">(Import data)</span> </a
+            ><span data-localize="nodata_08">.</span>
+          </p>
+          <p class="error"></p>
+          <div class="main-content-area" data-selected="build">
+            <ul class="main-tab-area" style="visibility: visible;">
+              <li class="tab" data-view="build" data-localize="">
+                Team formation
+              </li>
+              <li class="tab" data-view="newcomer" data-localize="">
+                Test new cards
+              </li>
+            </ul>
+            <div class="build-area">
+              <ul class="entry-area">
+                <li>
+                  <label class="formcaption" for="dat-account" data-localize=""
+                    >Account</label
+                  >
+                  <select id="dat-account"
+                    ><option value="dffdsf" selected="selected">dffdsf</option
+                    ><option value="dffdsf">dffdsf</option></select
+                  >
+                </li>
+                <li>
+                  <label class="formcaption" for="dat-mode" data-localize=""
+                    >Mode</label
+                  >
+                  <ul id="dat-mode" class="formation-radio-group">
+                    <li
+                      data-value="μ's"
+                      class="formation-radio-button selected"
+                    >
+                      μ's
+                    </li>
+                    <li data-value="Aqours" class="formation-radio-button">
+                      Aqours
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <label class="formcaption" for="dat-arrange" data-localize=""
+                    >Arrange</label
+                  >
+                  <select id="dat-arrange"
+                    ><option value="none" data-localize="" selected="selected"
+                      >(nothing)</option
+                    ><option value="challenge" data-localize=""
+                      >110%/110% Tap/Skill</option
+                    ><option value="110tap" data-localize=""
+                      >110% Tap Score</option
+                    ><option value="120tap" data-localize=""
+                      >120% Tap Score</option
+                    ><option value="130tap" data-localize=""
+                      >130% Tap Score</option
+                    ><option value="140tap" data-localize=""
+                      >140% Tap Score</option
+                    ><option value="osanpo" data-localize=""
+                      >110% Skill</option
+                    ></select
+                  >
+                </li>
+              </ul>
+              <ul class="entry-area">
+                <li>
+                  <label
+                    class="formcaption"
+                    for="dat-difficulty"
+                    data-localize=""
+                    >Difficulty</label
+                  >
+                  <ul id="dat-difficulty" class="formation-radio-group">
+                    <li
+                      data-value="master"
+                      class="formation-radio-button"
+                      data-localize=""
+                    >
+                      MASTER
+                    </li>
+                    <li
+                      data-value="expert"
+                      class="formation-radio-button selected"
+                      data-localize=""
+                    >
+                      EXPERT
+                    </li>
+                    <li
+                      data-value="hard"
+                      class="formation-radio-button"
+                      data-localize=""
+                    >
+                      HARD
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <label
+                    class="formcaption"
+                    for="dat-attribute"
+                    data-localize=""
+                    >Attribute</label
+                  >
+                  <ul id="dat-attribute" class="formation-radio-group">
+                    <li
+                      data-value="smile"
+                      class="formation-radio-button selected"
+                      data-localize=""
+                    >
+                      SMILE
+                    </li>
+                    <li
+                      data-value="pure"
+                      class="formation-radio-button"
+                      data-localize=""
+                    >
+                      PURE
+                    </li>
+                    <li
+                      data-value="cool"
+                      class="formation-radio-button"
+                      data-localize=""
+                    >
+                      COOL
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <label class="formcaption" for="dat-song" data-localize=""
+                    >Song</label
+                  >
+                  <select id="dat-song"
+                    ><option value="" data-localize="custom" selected="selected"
+                      >(custom)</option
+                    ><option value="愛は太陽じゃない？"
+                      >Ai wa Taiyou janai?</option
+                    ><option value="愛してるばんざーい！"
+                      >Aishiteru Banzai!</option
+                    ><option value="Angelic Angel">Angelic Angel</option
+                    ><option value="僕らのLIVE 君とのLIFE"
+                      >Bokura no LIVE Kimi to no LIFE</option
+                    ><option value="僕らは今のなかで"
+                      >Bokura wa Ima no Naka de</option
+                    ><option value="僕たちはひとつの光"
+                      >Bokutachi wa Hitotsu no Hikari</option
+                    ><option value="COLORFUL VOICE">COLORFUL VOICE</option
+                    ><option value="CheerDay CheerGirl!"
+                      >CheerDay CheerGirl!</option
+                    ><option value="Cutie Panther">Cutie Panther</option
+                    ><option value="永遠フレンズ">Eien Friends</option
+                    ><option value="HEART to HEART!">HEART to HEART!</option
+                    ><option value="Happy maker!">Happy maker!</option
+                    ><option value="Hello,星を数えて"
+                      >Hello, Hoshi wo Kazoete</option
+                    ><option value="恋のシグナルRin rin rin!"
+                      >Koi no Signal Rin rin rin!</option
+                    ><option value="これからのSomeday"
+                      >Korekara no Someday</option
+                    ><option value="くるりんMIRACLE">Kururin MIRACLE</option
+                    ><option value="ラブノベルス">Love Novels</option
+                    ><option value="Love marginal">Love marginal</option
+                    ><option value="Love wing bell">Love wing bell</option
+                    ><option value="MOMENT RING">MOMENT RING</option
+                    ><option value="まほうつかいはじめました！"
+                      >Mahoutsukai Hajimemashita!</option
+                    ><option value="Mermaid festa vol.2 ~Passionate~"
+                      >Mermaid festa vol.2 ~Passionate~</option
+                    ><option value="もうひとりじゃないよ"
+                      >Mou Hitori Janai yo</option
+                    ><option value="Music S.T.A.R.T!!">Music S.T.A.R.T!!</option
+                    ><option value="夏、終わらないで。"
+                      >Natsu, Owaranaide.</option
+                    ><option value="夏色えがおで1,2,Jump!"
+                      >Natsuiro Egao de 1,2,Jump!</option
+                    ><option value="にこぷり♡女子道">Nico Puri♡Joshidou</option
+                    ><option value="Oh,Love&amp;Peace!"
+                      >Oh,Love&amp;Peace!</option
+                    ><option value="乙姫心で恋宮殿"
+                      >Otohime Heart de Love Kyuuden</option
+                    ><option value="PSYCHIC FIRE">PSYCHIC FIRE</option
+                    ><option value="ぷわぷわーお！">Puwa Puwa-O!</option
+                    ><option value="START:DASH!!">START:DASH!!</option
+                    ><option value="シアワセ行きのSMILING!"
+                      >Shiawase Iki no SMILING!</option
+                    ><option value="Someday of my life"
+                      >Someday of my life</option
+                    ><option value="それは僕たちの奇跡"
+                      >Sore wa Bokutachi no Kiseki</option
+                    ><option value="ススメ→トゥモロウ">Susume→Tomorrow</option
+                    ><option value="Trouble Busters">Trouble Busters</option
+                    ><option value="WAO-WAO Powerful day!"
+                      >WAO-WAO Powerful day!</option
+                    ><option value="夢なき夢は夢じゃない"
+                      >Yume naki Yume wa Yume janai</option
+                    ></select
+                  >
+                </li>
+              </ul>
+              <ul class="entry-area">
+                <li>
+                  <label class="formcaption" for="dat-perfect" data-localize=""
+                    >% Perfects</label
+                  >
+                  <input
+                    id="dat-perfect"
+                    type="number"
+                    min="0"
+                    max="100"
+                    data-localize="default_value_80"
+                    placeholder="Defaults at 80"
+                  />
+                </li>
+                <li>
+                  <label class="formcaption" for="dat-time" data-localize=""
+                    >Song length</label
+                  >
+                  <input
+                    id="dat-time"
+                    type="number"
+                    min="1"
+                    max="540"
+                    data-localize="default_value"
+                    placeholder="Est. value added automatically"
+                  />
+                </li>
+                <li>
+                  <label class="formcaption" for="dat-notes" data-localize=""
+                    >No. of notes</label
+                  >
+                  <input
+                    id="dat-notes"
+                    type="number"
+                    min="1"
+                    max="2400"
+                    data-localize="default_value"
+                    placeholder="Est. value added automatically"
+                  />
+                </li>
+              </ul>
+              <ul class="command-area">
+                <li id="do-format-match" data-localize="">Score</li>
+                <li id="do-format-score" data-localize="">Liveshow</li>
+                <li id="do-format-ease" data-localize="">Perfect lock</li>
+                <li id="do-format-easerecovery" data-localize="">
+                  P-lock with Heal
+                </li>
+                <li id="do-format-fullcombo" data-localize="">Full combo</li>
+                <li id="do-toggle-option">
+                  <span data-localize="">Options</span>...
+                </li>
+              </ul>
+              <div class="message-area">
+                <p data-localize="">Each button's use is written below:</p>
+                <dl class="button-description">
+                  <dt data-localize="">Score</dt>
+                  <dd data-localize="">
+                    Highest score achievable without a guest support.
+                  </dd>
+                  <dt data-localize="">Liveshow</dt>
+                  <dd data-localize="">
+                    Highest score achievable with a guest support.
+                  </dd>
+                  <dt data-localize="">Perfect lock</dt>
+                  <dd data-localize="">
+                    Same attribute is prioritized when choosing best perfect
+                    lock cards.
+                  </dd>
+                  <dt data-localize="">P-lock with Heal</dt>
+                  <dd data-localize="">
+                    Same attribute is prioritized when choosing best perfect
+                    lock cards, and the most powerful healer/s will replace the
+                    weakest perfect lock card/s.
+                  </dd>
+                  <dt data-localize="">Full combo</dt>
+                  <dd data-localize="">
+                    Maximizes perfect lock regardless of attribute.
+                  </dd>
+                  <dt><span data-localize="">Options</span>...</dt>
+                  <dd>
+                    <span data-localize="">Shows the options dialog.</span>
+                    <dl class="option-description">
+                      <dt data-localize="">Automatic recalculation</dt>
+                      <dd data-localize="formation_explain_autorecalc">
+                        Sets whether your scores will be immediately
+                        recalculated after reorganising your team. When you are
+                        changing multiple members' idolisation status or skill
+                        level, setting it to "NO" will shorten the time needed
+                        for operation.
+                      </dd>
+                      <dt data-localize="">Guest reassessment</dt>
+                      <dd data-localize="formation_explain_guestreassessment">
+                        Sets whether guests will be reassessed in the team
+                        reorganisation after changing your song. If a useful
+                        guest is already chosen, setting it as "NO" will shorten
+                        the time needed for operation.
+                      </dd>
+                      <dt data-localize="">Nonet</dt>
+                      <dd data-localize="formation_explain_nonet">
+                        When doing Score Match or Liveshow formations, every
+                        member of either μ's or Aqours, as chosen in your "Mode"
+                        setting, will be included in the team formation. The
+                        "Nonet" School Idol Skill will also only be used when
+                        this option is enabled. This function is only available
+                        to those who have donated meat buns.
+                      </dd>
+                    </dl>
+                  </dd>
+                </dl>
+                <p data-localize="">
+                  To save time, the calculator will automatically calculate the
+                  semi-optimal SIS to insert for each card.
+                </p>
+                <p data-localize="">
+                  If you want a much more optimal build, select "School Idol
+                  Skill" tab, then hold-click it.
+                </p>
+                <p data-localize="formation_message_04">
+                  If you've already optimised SIS through hold-click once, the
+                  next attempt will show "strict search...". If you have enough
+                  quantity of each SIS, the chances of an even better
+                  optimization is low, so it's recommended to click "End
+                  process". If you don't have enough SIS, there is a chance of
+                  an even better optimization, so it's recommended to wait
+                  instead.
+                </p>
+                <p
+                  data-localize="formation_explain_accordingly"
+                  style="color: red;"
+                >
+                  *As of 25 April 2018, hypotheses have been made for how
+                  perfect score up, skill rate up, parameter up, parameter
+                  synchro, skill repeat, combo fever, skill level boost as well
+                  as chain skills work, and have been implemented accordingly.
+                </p>
+              </div>
+              <div class="progress-area"></div>
+              <div class="result-status-area">
+                <table class="result-summary">
+                  <tbody>
+                    <tr>
+                      <td data-localize="">Center skill :</td>
+                      <td id="dat-center-skill"></td>
+                    </tr>
+                    <tr>
+                      <td data-localize="">Recommended guest center skill :</td>
+                      <td id="dat-recommended-center-skill"></td>
+                    </tr>
+                    <tr id="dat-recommended-center-skill-holders-row">
+                      <td>&nbsp;</td>
+                      <td id="dat-recommended-center-skill-holders">
+                        <div class="result-area"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-localize="">Total expected score :</td>
+                      <td id="dat-expected-score"></td>
+                    </tr>
+                    <tr>
+                      <td data-localize="">Team's total stats :</td>
+                      <td id="dat-unit-status"></td>
+                    </tr>
+                    <tr>
+                      <td data-localize="">Otasuke power :</td>
+                      <td id="dat-otasuke-power"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="tab-area">
+                  <li class="tab" data-view="status" data-localize="">
+                    Formation
+                  </li>
+                  <li class="tab" data-view="idol-skill" data-localize="">
+                    School Idol Skill
+                  </li>
+                </ul>
+                <div id="dat-result-area" style="width: auto;">
+                  <table id="dat-result">
+                    <tbody>
+                      <tr>
+                        <th data-localize="">No.</th>
+                        <th data-localize="">Center</th>
+                        <th data-localize="">Thumbnail</th>
+                        <th class="status" data-localize="">Name</th>
+                        <th class="status" data-localize="">Attribute</th>
+                        <th class="status" data-localize="">Rarity</th>
+                        <th class="status" data-localize="">Card set</th>
+                        <th class="status" data-localize="">Idolisation</th>
+                        <th class="status" data-localize="">Total score</th>
+                        <th class="status" data-localize="">
+                          Total expected score up
+                        </th>
+                        <th class="status" data-localize="">
+                          Expected P-Lock (sec)
+                        </th>
+                        <th class="status" data-localize="">
+                          Expected healing (No. of times)
+                        </th>
+                        <th class="idol-skill" data-localize="">Kiss</th>
+                        <th class="idol-skill" data-localize="">Perfume</th>
+                        <th class="idol-skill" data-localize="">Ring</th>
+                        <th class="idol-skill" data-localize="">Cross</th>
+                        <th class="idol-skill" data-localize="">Aura</th>
+                        <th class="idol-skill" data-localize="">Veil</th>
+                        <th class="idol-skill" data-localize="">Charm</th>
+                        <th class="idol-skill" data-localize="">Heal</th>
+                        <th class="idol-skill" data-localize="">Trick</th>
+                        <th class="idol-skill" data-localize="">Wink</th>
+                        <th class="idol-skill" data-localize="">Trill</th>
+                        <th class="idol-skill" data-localize="">Bloom</th>
+                        <th class="idol-skill" data-localize="">Member</th>
+                        <th
+                          class="idol-skill premium-only"
+                          data-localize=""
+                          style="display: none;"
+                        >
+                          Nonet
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul class="command-area show-more-area">
+                  <li id="do-show-more" data-localize="">more...</li>
+                </ul>
+                <div class="next-section">
+                  <p data-localize="formation_explain_center">
+                    When clicking on the "center" column, the center will switch
+                    to that specific card.
+                  </p>
+                  <p data-localize="formation_explain_thumbnail">
+                    If you ever want to change a card's idolization, slot
+                    skills, or skill level to see the changes, click on the
+                    member's thumbnail, and a popup will appear to make your
+                    changes. Once you click OK, it will re-optimize the build.
+                    However, this change is temporary and doesn't overwrite the
+                    data itself.
+                  </p>
+                  <p data-localize="formation_explain_mark">
+                    When you click a card in the "No." column, it will be
+                    stickied with an emoji. The card will remain stickied until
+                    you refresh the page or change the account. When you power
+                    up a card via their thumbnail and then sticky that card, you
+                    can then re-optimize your team build, and the stickied card
+                    will keep the new changes you've added to it after
+                    re-optimization.
+                  </p>
+                  <p>
+                    <span class="icon-evil"></span>
+                    <span data-localize="formation_explain_mark_devil"
+                      >A member with this mark enters the unit preferentially.
+                      This function is the person exclusive use which treated me
+                      to the meat bun.</span
+                    >
+                  </p>
+                  <p data-localize="formation_explain_exclude">
+                    When clicking on a column other than the "center" column,
+                    that card will be removed from the formation. This does not
+                    change the member list data.
+                  </p>
+                  <p data-localize="formation_explain_guest">
+                    If you click on the recommended guest center skill, it will
+                    re-optimize with a different guest center skill. No changes
+                    can be made if the center skill is (nothing)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="newcomer-area">
+              <div class="newcomer-filter-area">
+                <div class="entry-newcomer-area">
+                  <label class="formcaption" data-localize="">New cards</label>
+                  <ul>
+                    <li class="selected" data-localize="">New cards</li>
+                  </ul>
+                </div>
+                <div class="entry-name-area">
+                  <label data-localize="">Name</label>
+                  <span data-group="muse" class="do-toggle-check">μ's</span>
+                  <span data-group="aqours" class="do-toggle-check"
+                    >Aqours</span
+                  >
+                  <ul data-group="muse">
+                    <li data-value="穂乃果" class="honoka" data-localize="">
+                      Honoka
+                    </li>
+                    <li data-value="絵里" class="eli" data-localize="">Eli</li>
+                    <li data-value="ことり" class="kotori" data-localize="">
+                      Kotori
+                    </li>
+                    <li data-value="海未" class="umi" data-localize="">Umi</li>
+                    <li data-value="凛" class="rin" data-localize="">Rin</li>
+                    <li data-value="真姫" class="maki" data-localize="">
+                      Maki
+                    </li>
+                    <li data-value="希" class="nozomi" data-localize="">
+                      Nozomi
+                    </li>
+                    <li data-value="花陽" class="hanayo" data-localize="">
+                      Hanayo
+                    </li>
+                    <li data-value="にこ" class="nico" data-localize="">
+                      Nico
+                    </li>
+                  </ul>
+                  <ul data-group="aqours">
+                    <li data-value="千歌" class="chika" data-localize="">
+                      Chika
+                    </li>
+                    <li data-value="梨子" class="riko" data-localize="">
+                      Riko
+                    </li>
+                    <li data-value="果南" class="kanan" data-localize="">
+                      Kanan
+                    </li>
+                    <li data-value="ダイヤ" class="dia" data-localize="">
+                      Dia
+                    </li>
+                    <li data-value="曜" class="you" data-localize="">You</li>
+                    <li data-value="善子" class="yoshiko" data-localize="">
+                      Yoshiko
+                    </li>
+                    <li data-value="花丸" class="hanamaru" data-localize="">
+                      Hanamaru
+                    </li>
+                    <li data-value="鞠莉" class="mari" data-localize="">
+                      Mari
+                    </li>
+                    <li data-value="ルビィ" class="ruby" data-localize="">
+                      Ruby
+                    </li>
+                  </ul>
+                </div>
+                <div class="horizon-container">
+                  <div class="horizon-item entry-attribute-area">
+                    <label class="formcaption" data-localize=""
+                      >Attribute</label
+                    >
+                    <ul>
+                      <li data-value="smile" data-localize="">Smile</li>
+                      <li data-value="pure" data-localize="">Pure</li>
+                      <li data-value="cool" data-localize="">Cool</li>
+                    </ul>
+                  </div>
+                  <div class="horizon-item entry-rarity-area">
+                    <label class="formcaption" data-localize="">Rarity</label>
+                    <ul>
+                      <li data-value="sr" data-localize="">SR</li>
+                      <li data-value="ssr" data-localize="">SSR</li>
+                      <li data-value="ur" data-localize="">UR</li>
+                    </ul>
+                  </div>
+                  <div class="horizon-item entry-extend-area">
+                    <label class="formcaption" data-localize=""
+                      >Idolisation</label
+                    >
+                    <ul>
+                      <li
+                        data-value="false"
+                        class="radio-button selected"
+                        data-localize="未覚醒button"
+                      >
+                        Unidolised
+                      </li>
+                      <li
+                        data-value="true"
+                        class="radio-button"
+                        data-localize="覚醒button"
+                      >
+                        Idolised
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="horizon-item entry-skill-area">
+                    <label class="formcaption" data-localize="">Skill</label>
+                    <ul>
+                      <li data-value="1" class="selected" data-localize="">
+                        Score
+                      </li>
+                      <li
+                        data-value="2"
+                        class="selected"
+                        data-localize="判定checkbox"
+                      >
+                        P-Lock
+                      </li>
+                      <li data-value="3" class="selected" data-localize="">
+                        Heal
+                      </li>
+                      <li data-value="4" class="selected" data-localize="">
+                        Perfect
+                      </li>
+                      <li data-value="5" class="selected" data-localize="">
+                        Chance
+                      </li>
+                      <li data-value="6" class="selected" data-localize="">
+                        Param
+                      </li>
+                      <li data-value="7" class="selected" data-localize="">
+                        Sync
+                      </li>
+                      <li data-value="8" class="selected" data-localize="">
+                        Repeat
+                      </li>
+                      <li data-value="9" class="selected" data-localize="">
+                        Boost
+                      </li>
+                      <li data-value="10" class="selected" data-localize="">
+                        Fever
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <label class="formcaption" data-localize=""
+                >Waiting to be saved</label
+              >
+              <ul id="cadet-info"></ul>
+              <label class="formcaption" data-localize="">New cards list</label>
+              <ul id="newcomer-info">
+                <li data-id="2053">
+                  <div class="frame ur pure" data-extend="false">
+                    <div class="bg">
+                      <img
+                        src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/icon-2053n.png"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li data-id="2052">
+                  <div class="frame ur smile" data-extend="false">
+                    <div class="bg">
+                      <img
+                        src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/icon-2052n.png"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li data-id="2051">
+                  <div class="frame ur cool" data-extend="false">
+                    <div class="bg">
+                      <img
+                        src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/icon-2051n.png"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li data-id="2048">
+                  <div class="frame sr cool" data-extend="false">
+                    <div class="bg sr cool">
+                      <img
+                        src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/icon-2048n.png"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li data-id="2047">
+                  <div class="frame sr smile" data-extend="false">
+                    <div class="bg sr smile">
+                      <img
+                        src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/icon-2047n.png"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li data-id="2046">
+                  <div class="frame ur cool" data-extend="false">
+                    <div class="bg">
+                      <img
+                        src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/icon-2046n.png"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li data-id="2045">
+                  <div class="frame ssr pure" data-extend="false">
+                    <div class="bg">
+                      <img
+                        src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/icon-2045n.png"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li data-id="2044">
+                  <div class="frame sr cool" data-extend="false">
+                    <div class="bg sr cool">
+                      <img
+                        src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/icon-2044n.png"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li data-id="2043">
+                  <div class="frame sr pure" data-extend="false">
+                    <div class="bg sr pure">
+                      <img
+                        src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/icon-2043n.png"
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile-only">
+            <div class="scroll-button scroll-button-pos-2" data-target="body">
+              <span class="icon-arrow-up"></span>
+            </div>
+            <div class="scroll-button scroll-button-pos-1" data-target="nav">
+              <span class="icon-menu"></span>
+            </div>
+          </div>
+          <div id="dialog-club-member-src" style="display: none;">
+            <div class="dialog-club-member">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="face"></td>
+                    <td>
+                      <span class="crown"></span><br /><span
+                        class="skill"
+                      ></span
+                      >/ <span class="center-skill"></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div>
+                <label data-localize="">Idolisation</label>
+                <ul class="dialog-entry-extend"></ul>
+              </div>
+              <div>
+                <label data-localize="">No. of skill slots</label>
+                <ul class="dialog-entry-slot"></ul>
+              </div>
+              <div>
+                <label data-localize="">Skill Lv</label>
+                <ul class="dialog-entry-skilllv"></ul>
+              </div>
+              <ul class="command-area">
+                <li class="do-cancel" data-localize="">CANCEL</li>
+                <li class="do-reformat" data-localize="">OK</li>
+              </ul>
+            </div>
+            <div class="dialog-newcomer">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="face"></td>
+                    <td>
+                      <span class="crown"></span><br /><span
+                        class="skill"
+                      ></span
+                      >/ <span class="center-skill"></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div>
+                <label data-localize="">Idolisation</label>
+                <ul class="dialog-entry-extend"></ul>
+              </div>
+              <div>
+                <label data-localize="">No. of skill slots</label>
+                <ul class="dialog-entry-slot"></ul>
+              </div>
+              <div>
+                <label data-localize="">Skill Lv</label>
+                <ul class="dialog-entry-skilllv"></ul>
+              </div>
+              <ul class="command-area">
+                <li class="do-cancel" data-localize="">CANCEL</li>
+                <li class="do-ok" data-localize="">OK</li>
+              </ul>
+            </div>
+          </div>
+          <div id="dialog-guest-skill-src" style="display: none;">
+            <div class="dialog-guest-skill">
+              <div class="guest-skill-area"></div>
+              <ul class="command-area">
+                <li class="do-cancel" data-localize="">CANCEL</li>
+                <li class="do-ok" data-localize="">OK</li>
+              </ul>
+            </div>
+          </div>
+          <div class="format-option" style="">
+            <ul class="entry-area">
+              <li>
+                <label
+                  class="formcaption"
+                  for="dat-auto-recalc"
+                  data-localize=""
+                  >Automatic recalculation</label
+                >
+                <ul id="dat-auto-recalc" class="formation-radio-group">
+                  <li
+                    data-value="true"
+                    class="formation-radio-button selected"
+                    data-localize=""
+                  >
+                    YES
+                  </li>
+                  <li
+                    data-value="false"
+                    class="formation-radio-button"
+                    data-localize=""
+                  >
+                    NO
+                  </li>
+                  <span class="formation-command-button do-recalc">Recalc</span>
+                </ul>
+              </li>
+              <li>
+                <label
+                  class="formcaption"
+                  for="dat-research-guest"
+                  data-localize=""
+                  >Guest reassessment</label
+                >
+                <ul id="dat-research-guest" class="formation-radio-group">
+                  <li
+                    data-value="true"
+                    class="formation-radio-button selected"
+                    data-localize=""
+                  >
+                    YES
+                  </li>
+                  <li
+                    data-value="false"
+                    class="formation-radio-button"
+                    data-localize=""
+                  >
+                    NO
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <label class="formcaption" for="dat-nonet-mode" data-localize=""
+                  >Nonet</label
+                >
+                <ul id="dat-nonet-mode" class="formation-radio-group">
+                  <li>premium only.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="entry-area">
+              <li>
+                <label class="formcaption" for="dat-nonet-mode" data-localize=""
+                  >出張先SIS</label
+                >
+                <ul id="dat-offcolor-sis" class="formation-radio-group">
+                  <li>premium only.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="entry-area entry-lightness">
+              <li>
+                <label class="formcaption" for="dat-lightness">軽さ</label>
+                <ul id="dat-lightness" class="formation-radio-group">
+                  <li data-value="1" class="formation-radio-button">1</li>
+                  <li data-value="2" class="formation-radio-button">2</li>
+                  <li data-value="3" class="formation-radio-button">3</li>
+                  <li data-value="4" class="formation-radio-button selected">
+                    4
+                  </li>
+                  <li data-value="5" class="formation-radio-button">5</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="https://designedfor.sakura.ne.jp/nikuma-n/index.html"
+                data-localize=""
+                >Home</a
+              >
+            </li>
+            <li class="category">
+              <span data-localize="">School Idol Festival</span>
+              <ul>
+                <li>
+                  <a
+                    href="https://designedfor.sakura.ne.jp/nikuma-n/school-idol-festival/formation.html"
+                    data-localize=""
+                    >Team formation</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://designedfor.sakura.ne.jp/nikuma-n/school-idol-festival/registration.html"
+                    data-localize=""
+                    >Add cards</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://designedfor.sakura.ne.jp/nikuma-n/school-idol-festival/registration-by-face.html"
+                    data-localize=""
+                    >Add cards via thumbnail</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://designedfor.sakura.ne.jp/nikuma-n/school-idol-festival/school-idol-skill-registration.html"
+                    data-localize=""
+                    >Add School Idol Skills</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://designedfor.sakura.ne.jp/nikuma-n/school-idol-festival/guest-searcher.html"
+                    data-localize=""
+                    >Search for guest support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://designedfor.sakura.ne.jp/nikuma-n/school-idol-festival/export.html"
+                    data-localize=""
+                    >Export data</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://designedfor.sakura.ne.jp/nikuma-n/school-idol-festival/import.html"
+                    data-localize=""
+                    >Import data</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://designedfor.sakura.ne.jp/nikuma-n/school-idol-festival/data-conversion.html"
+                    data-localize=""
+                    >Convert data</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://hope.open2ch.net/test/read.cgi/lovelive/1486262716/"
+                    target="_blank"
+                    data-localize=""
+                    >掲示板＠おーぷん２ちゃんねる</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="category">
+              <span data-localize="">Video-like</span>
+              <ul>
+                <li>
+                  <a
+                    href="https://designedfor.sakura.ne.jp/nikuma-n/animation/moment-ring.html"
+                    >MOMENT RING</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://designedfor.sakura.ne.jp/nikuma-n/animation/korekara.html"
+                    data-localize=""
+                    >Korekara</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="category">
+              <span data-localize="">misc</span>
+              <ul>
+                <li>
+                  <a
+                    href="https://designedfor.sakura.ne.jp/nikuma-n/sif-home/index.html"
+                    data-localize=""
+                    >Virtual Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://designedfor.sakura.ne.jp/nikuma-n/donation/index.html"
+                    data-localize=""
+                    >Donation</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <footer><p>designed for ﾆｸﾏｰﾝ. ©2016-2019 @minaraishi</p></footer>
+    </div>
+    <script
+      async=""
+      src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/analytics.js"
+    ></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/jquery-2.js"></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/fastclick.js"></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/modernizr.js"></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/jquery_004.js"></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/jquery.js"></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/auto-localize.js"></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/layoutkit.js"></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/googleanalytics.js"></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/jquery_002.js"></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/jquery_003.js"></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/sf-util.js"></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/sf-idol-skill.js"></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/formation-newcomers.js"></script
+    ><script src="%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B7%A8%E6%88%90%EF%BD%9Cdesigned%20for_files/formation.js"></script>
+    <div id="cboxOverlay" style="display: none;"></div>
+    <div
+      id="colorbox"
+      class=""
+      role="dialog"
+      tabindex="-1"
+      style="display: none;"
+    >
+      <div id="cboxWrapper">
+        <div>
+          <div id="cboxTopLeft" style="float: left;"></div>
+          <div id="cboxTopCenter" style="float: left;"></div>
+          <div id="cboxTopRight" style="float: left;"></div>
+        </div>
+        <div style="clear: left;">
+          <div id="cboxMiddleLeft" style="float: left;"></div>
+          <div id="cboxContent" style="float: left;">
+            <div id="cboxTitle" style="float: left;"></div>
+            <div id="cboxCurrent" style="float: left;"></div>
+            <button type="button" id="cboxPrevious"></button
+            ><button type="button" id="cboxNext"></button
+            ><button type="button" id="cboxSlideshow"></button>
+            <div id="cboxLoadingOverlay" style="float: left;"></div>
+            <div id="cboxLoadingGraphic" style="float: left;"></div>
+          </div>
+          <div id="cboxMiddleRight" style="float: left;"></div>
+        </div>
+        <div style="clear: left;">
+          <div id="cboxBottomLeft" style="float: left;"></div>
+          <div id="cboxBottomCenter" style="float: left;"></div>
+          <div id="cboxBottomRight" style="float: left;"></div>
+        </div>
+      </div>
+      <div
+        style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"
+      ></div>
+    </div>
+  </body>
+</html>
