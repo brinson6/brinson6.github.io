@@ -1,0 +1,1 @@
+"use strict";$(function(){var a=$.cookie("lang");null!=a&&"en"==a&&($("[data-localize]").each(function(){var a=$(this).data("localize");0==a.length&&(a=$(this).text(),$(this).data("localize",a))}),$("[data-localize]").localize("messages",{pathPrefix:"/nikuma-n",language:"en"}))});
